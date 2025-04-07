@@ -1,159 +1,213 @@
-<!DOCTYPE html><html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mainer India Store</title>
+  <meta name="description" content="Buy premium digital channels from Mainer India - Telegram, YouTube, Instagram, Facebook" />
+  <meta property="og:title" content="Mainer India Digital Store">
+  <meta property="og:description" content="Buy Telegram, YouTube, Instagram, Facebook channels at best prices">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://mainerboy.github.io/mainer-india-store/">
+  <title>Mainer India Digital Store</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css"/>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #0f0f0f, #1c1c1c);
-      color: #fff;
-    }
-    header {
-      text-align: center;
-      padding: 30px 10px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      color: #4facfe;
-    }
-    header p {
-      color: #ccc;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .product {
-      background: #222;
-      margin: 15px 0;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    }
-    .product h3 a {
-      color: #4facfe;
-      text-decoration: none;
-    }
-    .price {
-      font-weight: bold;
-    }
-    .discount {
-      color: #00e676;
-    }
-    .stars {
-      color: gold;
-      margin: 5px 0;
-    }
-    .review {
-      font-style: italic;
-      margin-bottom: 10px;
-    }
-    .btn {
-      background: #4facfe;
-      padding: 10px 20px;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      margin-right: 10px;
-    }
-    .money-back {
-      display: inline-block;
-      margin-top: 10px;
-      color: #00e676;
-      font-size: 0.9em;
-    }
-    .timer {
-      display: inline-block;
-      font-size: 1em;
-      color: #ff4081;
-      margin-left: 10px;
-    }
+    }body {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+header img {
+  height: 80px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.product {
+  background-color: #1e1e1e;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #00ffb3;
+  margin-bottom: 5px;
+}
+
+.discount {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.timer {
+  font-size: 0.9rem;
+  color: #f39c12;
+  margin-top: 5px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #00ffb3;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.buttons a:hover {
+  background: #00d49c;
+}
+
+.guarantee {
+  color: #7bed9f;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.swiper {
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: #2c2c2c;
+  border-radius: 15px;
+}
+
+.swiper-slide {
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background: #00ffb3;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
   </style>
-</head>
-<body>
+</head><body>
   <header>
-    <img src="/Logo.png" alt="Mainer India Logo" style="max-width: 150px;">
-    <h1>Mainer India</h1>
-    <p>Buy Premium Social Media Accounts</p>
-  </header>  <section class="section">
-    <div class="product">
-      <h3><a href="telegram.html" target="_blank">Telegram Channel</a></h3>
-      <p class="price">Price: <del>₹15000</del> <span class="discount">₹499</span> <span class="timer" id="timer1"></span></p>
-      <div class="stars">★★★★★</div>
-      <div class="review">“Best deal for a Telegram audience. Highly recommended!”</div>
-      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
-      <span class="money-back">100% Money Back Guarantee</span>
+    <img src="logo.png" alt="Mainer India Logo" />
+  </header>  <h1>Mainer India Digital Store</h1>  <div class="product" data-aos="fade-up">
+    <h2>Telegram Channel</h2>
+    <div class="price">₹12,000 <span class="discount">₹15,000</span></div>
+    <div class="timer" id="timer1"></div>
+    <div class="buttons">
+      <a href="https://rzp.io/rzp/GqRfRXf" target="_blank">Buy Now</a>
     </div>
-    <div class="product">
-      <h3><a href="youtube.html" target="_blank">YouTube Channel</a></h3>
-      <p class="price">Price: <del>₹4999</del> <span class="discount">₹499</span> <span class="timer" id="timer2"></span></p>
-      <div class="stars">★★★★☆</div>
-      <div class="review">“Legit channel with monetization enabled.”</div>
-      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
-      <span class="money-back">100% Money Back Guarantee</span>
+    <div class="guarantee">7 Day Money-Back Guarantee</div>
+  </div>  <div class="product" data-aos="fade-up">
+    <h2>YouTube Channel</h2>
+    <div class="price">₹4,000 <span class="discount">₹5,400</span></div>
+    <div class="timer" id="timer2"></div>
+    <div class="buttons">
+      <a href="https://rzp.io/rzp/GqRfRXf" target="_blank">Buy Now</a>
     </div>
-    <div class="product">
-      <h3><a href="facebook.html" target="_blank">Facebook Page</a></h3>
-      <p class="price">Price: <del>₹3800</del> <span class="discount">₹499</span> <span class="timer" id="timer3"></span></p>
-      <div class="stars">★★★★☆</div>
-      <div class="review">“Got a real FB page with 10k+ followers.”</div>
-      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
-      <span class="money-back">100% Money Back Guarantee</span>
+    <div class="guarantee">7 Day Money-Back Guarantee</div>
+  </div>  <div class="product" data-aos="fade-up">
+    <h2>Facebook Page</h2>
+    <div class="price">₹2,500 <span class="discount">₹3,000</span></div>
+    <div class="timer" id="timer3"></div>
+    <div class="buttons">
+      <a href="https://rzp.io/rzp/GqRfRXf" target="_blank">Buy Now</a>
     </div>
-    <div class="product">
-      <h3><a href="instagram.html" target="_blank">Instagram Account</a></h3>
-      <p class="price">Price: <del>₹1900</del> <span class="discount">₹499</span> <span class="timer" id="timer4"></span></p>
-      <div class="stars">★★★☆☆</div>
-      <div class="review">“Decent IG account for promo. Worth it.”</div>
-      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
-      <span class="money-back">100% Money Back Guarantee</span>
+    <div class="guarantee">7 Day Money-Back Guarantee</div>
+  </div>  <div class="product" data-aos="fade-up">
+    <h2>Instagram ID</h2>
+    <div class="price">₹1,200 <span class="discount">₹1,400</span></div>
+    <div class="timer" id="timer4"></div>
+    <div class="buttons">
+      <a href="https://rzp.io/rzp/GqRfRXf" target="_blank">Buy Now</a>
     </div>
-  </section>  <section class="section">
-    <h2 style="text-align: center;">Customer Reviews</h2>
-    <div class="product">
-      <div class="stars">★★★★★</div>
-      <div class="review">“Excellent service. Fast delivery.   Rohit”</div>
-      <div class="stars">★★★★☆</div>
-      <div class="review">“Account as described. Recommended.”</div>
-      <div class="stars">★★★★★</div>
-      <div class="review">“Great customer support!”</div>
-      <div class="stars">★★★☆☆</div>
-      <div class="review">“Little delay but good account.”</div>
-      <div class="stars">★★★★☆</div>
-      <div class="review">“Value for money.”</div>
-      <div class="stars">★★★★★</div>
-      <div class="review">“Best deal ever.”</div>
-      <div class="stars">★★★☆☆</div>
-      <div class="review">“Okay experience. Could be faster.”</div>
-      <div class="stars">★★★★☆</div>
-      <div class="review">“Genuine seller. Trusted.”</div>
-      <div class="stars">★★★★★</div>
-      <div class="review">“Very professional!”</div>
-      <div class="stars">★★★★☆</div>
-      <div class="review">“Nice quality accounts.”</div>
+    <div class="guarantee">7 Day Money-Back Guarantee</div>
+  </div>  <!-- Review Slider -->  <div class="swiper" data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">“Amazing channel! Boosted my business.” - Rakesh</div>
+      <div class="swiper-slide">“High-quality audience. Love it!” - Meera</div>
+      <div class="swiper-slide">“Very responsive support team.” - Zaid</div>
+      <div class="swiper-slide">“100% legit. Delivered as promised.” - Tanya</div>
+      <div class="swiper-slide">“Best digital purchase I made!” - Manish</div>
     </div>
-  </section>  <script>
-    function startTimer(id, seconds) {
+    <div class="swiper-pagination"></div>
+  </div>  <footer>
+    &copy; 2025 Mainer India. All rights reserved.
+  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>  <script>
+    AOS.init();
+
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    function startTimer(id, minutes) {
+      let duration = minutes * 60;
       const el = document.getElementById(id);
       setInterval(() => {
-        if (seconds <= 0) return;
-        seconds--;
-        const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
-        const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
-        const secs = String(seconds % 60).padStart(2, '0');
-        el.textContent = `${hrs}:${mins}:${secs}`;
+        const min = Math.floor(duration / 60);
+        const sec = duration % 60;
+        el.textContent = `Offer ends in: ${min}m ${sec}s`;
+        duration--;
+        if (duration < 0) duration = minutes * 60;
       }, 1000);
     }
-    startTimer("timer1", 7200);
-    startTimer("timer2", 7200);
-    startTimer("timer3", 7200);
-    startTimer("timer4", 7200);
-  </script></body>
-</html>
+    startTimer("timer1", 30);
+    startTimer("timer2", 20);
+    startTimer("timer3", 15);
+    startTimer("timer4", 10);
+  </script>
+  </body>
+</html> 
