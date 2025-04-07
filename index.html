@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mainer India Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 30px 10px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #4facfe;
+    }
+    header p {
+      color: #ccc;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product {
+      background: #222;
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+    .product h3 a {
+      color: #4facfe;
+      text-decoration: none;
+    }
+    .price {
+      font-weight: bold;
+    }
+    .discount {
+      color: #00e676;
+    }
+    .stars {
+      color: gold;
+      margin: 5px 0;
+    }
+    .review {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .btn {
+      background: #4facfe;
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    .money-back {
+      display: inline-block;
+      margin-top: 10px;
+      color: #00e676;
+      font-size: 0.9em;
+    }
+    .timer {
+      display: inline-block;
+      font-size: 1em;
+      color: #ff4081;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/Logo.png" alt="Mainer India Logo" style="max-width: 150px;">
+    <h1>Mainer India</h1>
+    <p>Buy Premium Social Media Accounts</p>
+  </header>  <section class="section">
+    <div class="product">
+      <h3><a href="telegram.html" target="_blank">Telegram Channel</a></h3>
+      <p class="price">Price: <del>₹15000</del> <span class="discount">₹499</span> <span class="timer" id="timer1"></span></p>
+      <div class="stars">★★★★★</div>
+      <div class="review">“Best deal for a Telegram audience. Highly recommended!”</div>
+      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
+      <span class="money-back">100% Money Back Guarantee</span>
+    </div>
+    <div class="product">
+      <h3><a href="youtube.html" target="_blank">YouTube Channel</a></h3>
+      <p class="price">Price: <del>₹4999</del> <span class="discount">₹499</span> <span class="timer" id="timer2"></span></p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">“Legit channel with monetization enabled.”</div>
+      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
+      <span class="money-back">100% Money Back Guarantee</span>
+    </div>
+    <div class="product">
+      <h3><a href="facebook.html" target="_blank">Facebook Page</a></h3>
+      <p class="price">Price: <del>₹3800</del> <span class="discount">₹499</span> <span class="timer" id="timer3"></span></p>
+      <div class="stars">★★★★☆</div>
+      <div class="review">“Got a real FB page with 10k+ followers.”</div>
+      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
+      <span class="money-back">100% Money Back Guarantee</span>
+    </div>
+    <div class="product">
+      <h3><a href="instagram.html" target="_blank">Instagram Account</a></h3>
+      <p class="price">Price: <del>₹1900</del> <span class="discount">₹499</span> <span class="timer" id="timer4"></span></p>
+      <div class="stars">★★★☆☆</div>
+      <div class="review">“Decent IG account for promo. Worth it.”</div>
+      <a href="https://rzp.io/rzp/GqRfRXf" class="btn" target="_blank">Buy Now</a>
+      <span class="money-back">100% Money Back Guarantee</span>
+    </div>
+  </section>  <section class="section">
+    <h2 style="text-align: center;">Customer Reviews</h2>
+    <div class="product">
+      <div class="stars">★★★★★</div>
+      <div class="review">“Excellent service. Fast delivery.   Rohit”</div>
+      <div class="stars">★★★★☆</div>
+      <div class="review">“Account as described. Recommended.”</div>
+      <div class="stars">★★★★★</div>
+      <div class="review">“Great customer support!”</div>
+      <div class="stars">★★★☆☆</div>
+      <div class="review">“Little delay but good account.”</div>
+      <div class="stars">★★★★☆</div>
+      <div class="review">“Value for money.”</div>
+      <div class="stars">★★★★★</div>
+      <div class="review">“Best deal ever.”</div>
+      <div class="stars">★★★☆☆</div>
+      <div class="review">“Okay experience. Could be faster.”</div>
+      <div class="stars">★★★★☆</div>
+      <div class="review">“Genuine seller. Trusted.”</div>
+      <div class="stars">★★★★★</div>
+      <div class="review">“Very professional!”</div>
+      <div class="stars">★★★★☆</div>
+      <div class="review">“Nice quality accounts.”</div>
+    </div>
+  </section>  <script>
+    function startTimer(id, seconds) {
+      const el = document.getElementById(id);
+      setInterval(() => {
+        if (seconds <= 0) return;
+        seconds--;
+        const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+        const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+        const secs = String(seconds % 60).padStart(2, '0');
+        el.textContent = `${hrs}:${mins}:${secs}`;
+      }, 1000);
+    }
+    startTimer("timer1", 7200);
+    startTimer("timer2", 7200);
+    startTimer("timer3", 7200);
+    startTimer("timer4", 7200);
+  </script></body>
+</html>
